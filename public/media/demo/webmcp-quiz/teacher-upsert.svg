@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#F4EFE6"/>
+  <text x="64" y="72" font-family="Georgia, serif" font-size="34" fill="#24382C" font-weight="600">Teacher rewrite</text>
+  <text x="64" y="110" font-family="Segoe UI, sans-serif" font-size="18" fill="#5C3A21">Materials are editable. Student mode refuses this.</text>
+  <rect x="80" y="180" width="1120" height="440" rx="14" fill="#FAF7F1" stroke="#24382C" stroke-width="3"/>
+  <text x="120" y="240" font-family="Georgia, serif" font-size="24" fill="#24382C">Manuscript</text>
+  <rect x="120" y="270" width="720" height="280" rx="10" fill="#E8DFD0"/>
+  <text x="150" y="330" font-family="Segoe UI, sans-serif" font-size="20" fill="#5C3A21">Opening section — being rewritten</text>
+  <line x1="150" y1="380" x2="760" y2="380" stroke="#C4A35A" stroke-width="6"/>
+  <line x1="150" y1="430" x2="700" y2="430" stroke="#C4A35A" stroke-width="6"/>
+  <line x1="150" y1="480" x2="640" y2="480" stroke="#C4A35A" stroke-width="6"/>
+  <rect x="880" y="270" width="280" height="280" rx="10" fill="#24382C"/>
+  <text x="1020" y="360" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="16" fill="#C4A35A">lectern_</text>
+  <text x="1020" y="400" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="16" fill="#C4A35A">upsert_section</text>
+  <text x="1020" y="480" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="16" fill="#FAF7F1">Teacher only</text>
+</svg>

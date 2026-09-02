@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#F4EFE6"/>
+  <text x="64" y="72" font-family="Georgia, serif" font-size="34" fill="#24382C" font-weight="600">Chat about a screenshot</text>
+  <text x="64" y="110" font-family="Segoe UI, sans-serif" font-size="18" fill="#5C3A21">Talks about the page. Does not change it.</text>
+  <rect x="80" y="180" width="520" height="440" rx="14" fill="#FAF7F1" stroke="#5C3A21" stroke-width="2"/>
+  <text x="110" y="230" font-family="Georgia, serif" font-size="22" fill="#5C3A21">Frozen page</text>
+  <rect x="110" y="260" width="460" height="280" rx="8" fill="#E8DFD0"/>
+  <line x1="140" y1="310" x2="520" y2="310" stroke="#C4C0B8" stroke-width="8"/>
+  <line x1="140" y1="360" x2="480" y2="360" stroke="#C4C0B8" stroke-width="8"/>
+  <line x1="140" y1="410" x2="500" y2="410" stroke="#C4C0B8" stroke-width="8"/>
+  <line x1="140" y1="460" x2="420" y2="460" stroke="#C4C0B8" stroke-width="8"/>
+  <rect x="680" y="180" width="520" height="440" rx="14" fill="#24382C"/>
+  <text x="710" y="240" font-family="Georgia, serif" font-size="22" fill="#FAF7F1">Chat</text>
+  <rect x="710" y="270" width="460" height="90" rx="8" fill="#3A5644"/>
+  <text x="730" y="325" font-family="Segoe UI, sans-serif" font-size="18" fill="#E8DFD0">Summarize this image</text>
+  <rect x="710" y="390" width="460" height="90" rx="8" fill="#5C3A21"/>
+  <text x="730" y="445" font-family="Segoe UI, sans-serif" font-size="18" fill="#E8DFD0">No tools registered</text>
+  <text x="710" y="560" font-family="IBM Plex Mono, monospace" font-size="16" fill="#C4A35A">not WebMCP</text>
+</svg>

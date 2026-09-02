@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#24382C" />
+    <title>Lectern — materials, tests, knowledge</title>
+    <meta
+      name="description"
+      content="Lectern is an open-source lesson studio. Teachers pair with in-page WebMCP AI to write materials and tests; students read, mark, and ask from a locked copy. No account."
+    />
+    <meta name="robots" content="index,follow" />
+    <meta name="author" content="KOHA-TECH Sp. z o.o." />
+    <!-- Agent discovery: Lectern is an in-page WebMCP tool provider, not a DOM-only app. -->
+    <meta name="webmcp" content="required; context=document.modelContext; tools=lectern_*" />
+    <meta
+      name="webmcp-instructions"
+      content="Open Lectern in a WebMCP-capable in-app browser. Discover and call the native lectern_* tools registered on document.modelContext; do not substitute DOM automation when WebMCP tools are available. Teacher mode provides authoring tools and Student mode provides read, mark, and tutoring tools."
+    />
+    <meta
+      name="ai-agent-instructions"
+      content="This page is a native WebMCP application. Use its page-registered lectern_* tools through document.modelContext. If those tools are not visible, reopen the page in a WebMCP-capable browser before acting."
+    />
+    <link rel="canonical" href="https://lectern.click/" />
+    <link rel="license" href="https://lectern.click/license" />
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="https://lectern.click/sitemap.xml" />
+    <link rel="alternate" type="text/plain" href="/llms.txt" title="Lectern agent instructions" />
+
+    <meta property="og:site_name" content="Lectern" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:title" content="Lectern — materials, tests, knowledge" />
+    <meta
+      property="og:description"
+      content="A good lesson is materials and tests — and at the end, it brings you knowledge. Pair with WebMCP AI on lectern.click."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://lectern.click/" />
+    <meta property="og:image" content="https://lectern.click/og-preview.png" />
+    <meta property="og:image:alt" content="Lectern — walnut lectern mark with forest-green wordmark" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1536" />
+    <meta property="og:image:height" content="1024" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Lectern — materials, tests, knowledge" />
+    <meta
+      name="twitter:description"
+      content="A good lesson is materials and tests — and at the end, it brings you knowledge. Pair with WebMCP AI on lectern.click."
+    />
+    <meta name="twitter:image" content="https://lectern.click/og-preview.png" />
+    <meta name="twitter:image:alt" content="Lectern — walnut lectern mark with forest-green wordmark" />
+
+    <script type="application/ld+json" id="lectern-jsonld">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://lectern.click/#organization",
+            "name": "KOHA-TECH Sp. z o.o.",
+            "legalName": "Koha-Tech spółka z ograniczoną odpowiedzialnością",
+            "url": "https://koha-tech.com",
+            "email": "contact@koha-tech.com"
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://lectern.click/#website",
+            "url": "https://lectern.click/",
+            "name": "Lectern",
+            "publisher": { "@id": "https://lectern.click/#organization" }
+          },
+          {
+            "@type": ["SoftwareApplication", "WebApplication"],
+            "@id": "https://lectern.click/#software",
+            "name": "Lectern",
+            "applicationCategory": "EducationalApplication",
+            "operatingSystem": "Web",
+            "url": "https://lectern.click",
+            "isAccessibleForFree": true,
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "USD"
+            }
+          }
+        ]
+      }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,520;1,9..144,600&family=IBM+Plex+Mono:wght@400;500&family=Noto+Naskh+Arabic:wght@500;600;700&family=Noto+Sans+Arabic:wght@400;500;600;700&family=Source+Sans+3:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#F4EFE6"/>
+  <text x="64" y="72" font-family="Georgia, serif" font-size="34" fill="#24382C" font-weight="600">Edit the operating system</text>
+  <text x="64" y="110" font-family="Segoe UI, sans-serif" font-size="18" fill="#5C3A21">WebMCP cannot reach the OS. Tools stay on this document.</text>
+  <rect x="200" y="180" width="880" height="440" rx="16" fill="#1A1612"/>
+  <text x="240" y="240" font-family="Georgia, serif" font-size="24" fill="#FAF7F1">System settings</text>
+  <rect x="240" y="280" width="800" height="70" rx="8" fill="#3A5644"/>
+  <text x="270" y="324" font-family="Segoe UI, sans-serif" font-size="20" fill="#FAF7F1">Network</text>
+  <rect x="240" y="370" width="800" height="70" rx="8" fill="#3A5644"/>
+  <text x="270" y="414" font-family="Segoe UI, sans-serif" font-size="20" fill="#FAF7F1">Permissions</text>
+  <rect x="240" y="460" width="800" height="70" rx="8" fill="#5C3A21"/>
+  <text x="270" y="504" font-family="Segoe UI, sans-serif" font-size="20" fill="#FAF7F1">Kernel / files</text>
+  <text x="640" y="590" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="18" fill="#C4A35A">not document.modelContext</text>
+</svg>

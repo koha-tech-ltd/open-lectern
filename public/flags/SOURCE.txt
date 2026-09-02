@@ -1,0 +1,3 @@
+Flag PNGs mirrored from https://flagcdn.com (Flagpedia).
+National flags are public domain; keep filenames as ISO 3166-1 alpha-2.
+Lectern copies the LIA set minus ru (Russian is not a UI language).

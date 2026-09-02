@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Запорозька Січ на Дніпрі</title><desc id="desc">Стилізована навчальна ілюстрація укріпленого козацького поселення.</desc>
+  <defs><linearGradient id="sky" x1="0" x2="0" y1="0" y2="1"><stop stop-color="#8bc6e4"/><stop offset="1" stop-color="#f7dca1"/></linearGradient><linearGradient id="river" x1="0" x2="1"><stop stop-color="#2e7897"/><stop offset="1" stop-color="#79bfd0"/></linearGradient></defs>
+  <rect width="1200" height="675" fill="url(#sky)"/><circle cx="950" cy="130" r="55" fill="#fff0ba"/>
+  <path d="M0 310 Q250 230 490 315T870 285T1200 330V520H0Z" fill="#92a661"/><path d="M0 425 Q310 355 620 440T1200 410V675H0Z" fill="#c4b46b"/>
+  <path d="M0 520 Q250 465 520 540T1200 500V675H0Z" fill="url(#river)"/><path d="M0 562 Q220 515 480 580T1050 548" fill="none" stroke="#d9edf0" stroke-width="12" opacity=".7"/>
+  <path d="M305 360 L350 305 395 360Z" fill="#723d26"/><rect x="326" y="359" width="48" height="60" fill="#e7d29c"/><path d="M435 365 L488 292 540 365Z" fill="#763e25"/><rect x="457" y="364" width="62" height="72" fill="#edd99f"/>
+  <path d="M590 373 L645 278 700 373Z" fill="#683823"/><rect x="611" y="371" width="68" height="87" fill="#f0dca6"/><path d="M645 270v-52" stroke="#4d321f" stroke-width="10"/><path d="M645 212c-26 15-46 15-65 0 22-10 42-16 65 0Z" fill="#c44832"/>
+  <path d="M220 438H790" stroke="#6f4328" stroke-width="17"/><g stroke="#6f4328" stroke-width="11"><path d="M245 425v-87"/><path d="M285 425v-87"/><path d="M325 425v-87"/><path d="M365 425v-87"/><path d="M405 425v-87"/><path d="M745 425v-87"/><path d="M785 425v-87"/></g>
+  <path d="M840 498l105-24 60 23-107 27z" fill="#7c4a2f"/><path d="M865 480l33-42 31 38" fill="#efe0a8"/><path d="M832 507l-37 78" stroke="#543521" stroke-width="10"/><path d="M954 504l28 74" stroke="#543521" stroke-width="10"/>
+  <g fill="#263b2c"><path d="M103 370q25-85 50 0"/><path d="M145 385q30-105 60 0"/><path d="M1035 392q25-85 50 0"/><path d="M1085 390q30-105 60 0"/></g>
+  <rect x="55" y="47" width="390" height="70" rx="12" fill="#24382c" opacity=".92"/><text x="82" y="92" fill="#fff8e6" font-family="Georgia,serif" font-size="35">Запорозька Січ • XVI–XVIII ст.</text>
+</svg>

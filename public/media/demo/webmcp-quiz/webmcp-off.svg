@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#F4EFE6"/>
+  <text x="64" y="72" font-family="Georgia, serif" font-size="34" fill="#24382C" font-weight="600">Turn WebMCP off</text>
+  <text x="64" y="110" font-family="Segoe UI, sans-serif" font-size="18" fill="#5C3A21">Student study still needs the page tools that remain.</text>
+  <rect x="200" y="180" width="880" height="440" rx="16" fill="#E8DFD0"/>
+  <text x="240" y="250" font-family="Georgia, serif" font-size="24" fill="#5C3A21">Registered tools</text>
+  <g opacity="0.35" font-family="IBM Plex Mono, monospace" font-size="20" fill="#24382C">
+    <rect x="240" y="290" width="800" height="70" rx="8" fill="#FAF7F1"/>
+    <text x="270" y="334">lectern_get_section</text>
+    <rect x="240" y="380" width="800" height="70" rx="8" fill="#FAF7F1"/>
+    <text x="270" y="424">lectern_add_annotation</text>
+    <rect x="240" y="470" width="800" height="70" rx="8" fill="#FAF7F1"/>
+    <text x="270" y="514">lectern_list_annotations</text>
+  </g>
+  <line x1="220" y1="200" x2="1060" y2="600" stroke="#8B3A3A" stroke-width="10"/>
+  <text x="640" y="590" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="18" fill="#8B3A3A">unavailable</text>
+</svg>

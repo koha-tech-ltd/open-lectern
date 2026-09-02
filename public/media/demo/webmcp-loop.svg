@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#F4EFE6"/>
+  <text x="64" y="64" font-family="Georgia, serif" font-size="34" fill="#24382C" font-weight="600">Draft / co-pilot / publish</text>
+  <text x="64" y="100" font-family="Segoe UI, sans-serif" font-size="18" fill="#5C3A21">The human stays in the loop</text>
+  <circle cx="220" cy="360" r="110" fill="#FAF7F1" stroke="#24382C" stroke-width="4"/>
+  <text x="220" y="350" text-anchor="middle" font-family="Georgia, serif" font-size="28" fill="#24382C">Draft</text>
+  <text x="220" y="390" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="16" fill="#5C3A21">you write</text>
+  <path d="M340 360 H460" stroke="#C4A35A" stroke-width="5"/>
+  <polygon points="460,350 490,360 460,370" fill="#C4A35A"/>
+  <circle cx="640" cy="360" r="110" fill="#24382C"/>
+  <text x="640" y="350" text-anchor="middle" font-family="Georgia, serif" font-size="26" fill="#FAF7F1">Co-pilot</text>
+  <text x="640" y="390" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="16" fill="#C4A35A">WebMCP tools</text>
+  <path d="M760 360 H880" stroke="#C4A35A" stroke-width="5"/>
+  <polygon points="880,350 910,360 880,370" fill="#C4A35A"/>
+  <circle cx="1060" cy="360" r="110" fill="#FAF7F1" stroke="#B8843A" stroke-width="4"/>
+  <text x="1060" y="350" text-anchor="middle" font-family="Georgia, serif" font-size="26" fill="#24382C">Publish</text>
+  <text x="1060" y="390" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="16" fill="#5C3A21">you decide</text>
+  <path d="M220 480 Q640 620 1060 480" fill="none" stroke="#3A5644" stroke-width="3" stroke-dasharray="8 8"/>
+  <text x="640" y="640" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="18" fill="#3A5644">Review before students see it</text>
+</svg>

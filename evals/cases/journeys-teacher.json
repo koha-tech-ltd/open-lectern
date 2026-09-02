@@ -1,0 +1,52 @@
+[
+  {
+    "name": "[teacher][journey] harden draft then publish",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Call lectern_list_gaps and fix every blocker. Give the lesson a real title and one objective, write a material section, add one quiz item, then publish and give me the student URL."
+      }
+    ],
+    "expectedCall": [
+      {
+        "functionName": "lectern_get_lesson"
+      },
+      {
+        "functionName": "lectern_list_gaps"
+      },
+      {
+        "unordered": [
+          {
+            "functionName": "lectern_set_meta",
+            "arguments": {
+              "title": { "$type": "string" },
+              "objectives": { "$type": "array" }
+            }
+          },
+          {
+            "ordered": [
+              {
+                "functionName": "lectern_upsert_section",
+                "arguments": {
+                  "title": { "$type": "string" },
+                  "body": { "$type": "string" }
+                }
+              },
+              {
+                "functionName": "lectern_upsert_quiz_item",
+                "arguments": {
+                  "prompt": { "$type": "string" },
+                  "choices": { "$type": "array" },
+                  "answerIndex": { "$gte": 0 }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "functionName": "lectern_publish_lesson"
+      }
+    ]
+  }
+]

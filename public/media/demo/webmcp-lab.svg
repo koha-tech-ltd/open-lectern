@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#F4EFE6"/>
+  <text x="64" y="64" font-family="Georgia, serif" font-size="34" fill="#24382C" font-weight="600">Run this lesson live</text>
+  <text x="64" y="100" font-family="Segoe UI, sans-serif" font-size="18" fill="#5C3A21">Same page. Same tools. Student copy after publish.</text>
+  <g font-family="Segoe UI, sans-serif" font-size="16" fill="#FAF7F1">
+    <rect x="80" y="180" width="200" height="200" rx="12" fill="#24382C"/>
+    <text x="180" y="250" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="28" fill="#C4A35A">1</text>
+    <text x="180" y="300" text-anchor="middle">Enable WebMCP</text>
+    <text x="180" y="328" text-anchor="middle" fill="#E8DFD0">ChatGPT / Chrome</text>
+    <path d="M290 280 H350" stroke="#C4A35A" stroke-width="5"/>
+    <polygon points="350,270 380,280 350,290" fill="#C4A35A"/>
+    <rect x="390" y="180" width="200" height="200" rx="12" fill="#3A5644"/>
+    <text x="490" y="250" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="28" fill="#C4A35A">2</text>
+    <text x="490" y="300" text-anchor="middle">Keep Lectern open</text>
+    <text x="490" y="328" text-anchor="middle" fill="#E8DFD0">tools stay registered</text>
+    <path d="M600 280 H660" stroke="#C4A35A" stroke-width="5"/>
+    <polygon points="660,270 690,280 660,290" fill="#C4A35A"/>
+    <rect x="700" y="180" width="200" height="200" rx="12" fill="#5C3A21"/>
+    <text x="800" y="250" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="28" fill="#C4A35A">3</text>
+    <text x="800" y="300" text-anchor="middle">Ask list_gaps</text>
+    <text x="800" y="328" text-anchor="middle" fill="#E8DFD0">watch the page</text>
+    <path d="M910 280 H970" stroke="#C4A35A" stroke-width="5"/>
+    <polygon points="970,270 1000,280 970,290" fill="#C4A35A"/>
+    <rect x="1010" y="180" width="190" height="200" rx="12" fill="#B8843A"/>
+    <text x="1105" y="250" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="28" fill="#FAF7F1">4</text>
+    <text x="1105" y="300" text-anchor="middle">Switch Student</text>
+    <text x="1105" y="328" text-anchor="middle" fill="#FAF7F1">mark and ask</text>
+  </g>
+  <rect x="80" y="440" width="1120" height="200" rx="12" fill="#FAF7F1" stroke="#C4A35A" stroke-width="3"/>
+  <text x="110" y="500" font-family="Georgia, serif" font-size="24" fill="#24382C">Share path</text>
+  <text x="110" y="550" font-family="IBM Plex Mono, monospace" font-size="22" fill="#B8843A">/studio?demo=webmcp&amp;mode=student</text>
+  <text x="110" y="600" font-family="Segoe UI, sans-serif" font-size="18" fill="#5C3A21">Short link. Canonical lesson. Read-only until you switch mode.</text>
+</svg>

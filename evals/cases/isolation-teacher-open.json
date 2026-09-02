@@ -1,0 +1,81 @@
+[
+  {
+    "name": "[teacher][open] draft is not Monday-ready",
+    "messages": [
+      {
+        "role": "user",
+        "content": "This draft isn't ready for Monday. What's missing before I can teach from it?"
+      }
+    ],
+    "expectedCall": [
+      {
+        "functionName": "lectern_list_gaps"
+      }
+    ]
+  },
+  {
+    "name": "[teacher][open] need something students can be checked on",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Make this teachable — we need something students can be checked on, not only materials."
+      }
+    ],
+    "expectedCall": [
+      {
+        "functionName": "lectern_upsert_quiz_item",
+        "arguments": {
+          "prompt": { "$type": "string" },
+          "choices": { "$type": "array" },
+          "answerIndex": { "$gte": 0 }
+        }
+      }
+    ]
+  },
+  {
+    "name": "[teacher][open] opening is too thin",
+    "messages": [
+      {
+        "role": "user",
+        "content": "The opening is too thin. Write it like a textbook with a Definition callout."
+      }
+    ],
+    "expectedCall": [
+      {
+        "functionName": "lectern_upsert_section",
+        "arguments": {
+          "title": { "$type": "string" },
+          "body": { "$contains": "Definition" }
+        }
+      }
+    ]
+  },
+  {
+    "name": "[teacher][open] lock this for learners",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Ship a read-only copy students can open on lectern.click."
+      }
+    ],
+    "expectedCall": [
+      {
+        "functionName": "lectern_publish_lesson"
+      }
+    ]
+  },
+  {
+    "name": "[teacher][open] work on a different saved draft",
+    "messages": [
+      {
+        "role": "user",
+        "content": "I want to work on a different lesson I already started on this device. What's under Your materials?"
+      }
+    ],
+    "expectedCall": [
+      {
+        "functionName": "lectern_list_library"
+      }
+    ]
+  }
+]

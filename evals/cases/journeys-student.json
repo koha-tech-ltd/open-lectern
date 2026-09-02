@@ -1,0 +1,29 @@
+[
+  {
+    "name": "[student][journey] grounded explain then annotate",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Look at the lesson, read section sec_leaf01, explain it simply from that section only, then leave a note that I am unsure about stomata."
+      }
+    ],
+    "expectedCall": [
+      {
+        "functionName": "lectern_get_lesson"
+      },
+      {
+        "functionName": "lectern_get_section",
+        "arguments": {
+          "sectionId": "sec_leaf01"
+        }
+      },
+      {
+        "functionName": "lectern_add_annotation",
+        "arguments": {
+          "sectionId": "sec_leaf01",
+          "note": { "$contains": "stomata" }
+        }
+      }
+    ]
+  }
+]

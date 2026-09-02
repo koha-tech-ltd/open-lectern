@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#F4EFE6"/>
+  <text x="64" y="64" font-family="Georgia, serif" font-size="34" fill="#24382C" font-weight="600">Teacher tools vs student tools</text>
+  <text x="64" y="100" font-family="Segoe UI, sans-serif" font-size="18" fill="#5C3A21">Mode change re-registers the catalog</text>
+  <rect x="80" y="150" width="520" height="480" rx="12" fill="#FAF7F1" stroke="#24382C" stroke-width="3"/>
+  <text x="110" y="200" font-family="Georgia, serif" font-size="24" fill="#24382C">Teacher</text>
+  <g font-family="IBM Plex Mono, monospace" font-size="18" fill="#FAF7F1">
+    <rect x="110" y="230" width="460" height="56" rx="8" fill="#24382C"/>
+    <text x="130" y="265">lectern_list_gaps</text>
+    <rect x="110" y="304" width="460" height="56" rx="8" fill="#3A5644"/>
+    <text x="130" y="339">lectern_upsert_section</text>
+    <rect x="110" y="378" width="460" height="56" rx="8" fill="#5C3A21"/>
+    <text x="130" y="413">lectern_upsert_quiz_item</text>
+    <rect x="110" y="452" width="460" height="56" rx="8" fill="#B8843A"/>
+    <text x="130" y="487">lectern_publish_lesson</text>
+  </g>
+  <text x="110" y="590" font-family="Segoe UI, sans-serif" font-size="16" fill="#5C3A21">Write, then review</text>
+  <rect x="680" y="150" width="520" height="480" rx="12" fill="#FAF7F1" stroke="#C4A35A" stroke-width="3"/>
+  <text x="710" y="200" font-family="Georgia, serif" font-size="24" fill="#B8843A">Student</text>
+  <g font-family="IBM Plex Mono, monospace" font-size="18" fill="#FAF7F1">
+    <rect x="710" y="230" width="460" height="56" rx="8" fill="#24382C"/>
+    <text x="730" y="265">lectern_get_section</text>
+    <rect x="710" y="304" width="460" height="56" rx="8" fill="#3A5644"/>
+    <text x="730" y="339">lectern_add_annotation</text>
+    <rect x="710" y="378" width="460" height="56" rx="8" fill="#5C3A21"/>
+    <text x="730" y="413">lectern_list_annotations</text>
+  </g>
+  <text x="710" y="520" font-family="Georgia, serif" font-size="22" fill="#24382C">upsert_section</text>
+  <text x="710" y="560" font-family="Segoe UI, sans-serif" font-size="18" fill="#5C3A21">refused on purpose</text>
+  <text x="710" y="600" font-family="Segoe UI, sans-serif" font-size="16" fill="#5C3A21">Read, mark, ask</text>
+</svg>

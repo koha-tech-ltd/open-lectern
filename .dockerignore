@@ -1,0 +1,11 @@
+node_modules
+dist
+output
+.git
+.DS_Store
+*.md
+docs
+.env
+.env.*
+vercel.json
+docker-compose.yml

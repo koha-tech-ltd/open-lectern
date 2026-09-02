@@ -1,0 +1,12 @@
+Installed as lectern-states.mp4 (10s / 24fps / 240 frames). Playback is muted.
+Ingredient: /mascots/lectern-mascot-anchor.png (owl A)
+Poster: lectern-states-poster.webp is the first frame of this clip (WebP).
+Regenerate it when you replace the mp4 so the copilot preview matches the reel.
+
+Anchors (0-indexed): 0, 40, 93, 132, 185, 228
+(LIA’s 136 / 189 / 232 are ~4 frames into the next beat on this reel.)
+breathe 0–40
+talk 40–93 (loopable)
+listen 93–132, freeze ~114
+cheer 132–185
+wave 185–228

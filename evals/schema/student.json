@@ -1,0 +1,179 @@
+[
+  {
+    "name": "lectern_list_locales",
+    "description": "List Lectern interface languages (flags in the header). Includes Arabic RTL. Russian is not supported. Does not translate lesson content.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {},
+      "additionalProperties": false
+    }
+  },
+  {
+    "name": "lectern_get_locale",
+    "description": "Return the current Lectern interface language, text direction (ltr/rtl), and the supported locale list.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {},
+      "additionalProperties": false
+    }
+  },
+  {
+    "name": "lectern_set_locale",
+    "description": "Change the Lectern chrome language (header, buttons, onboarding, co-pilot). Does not rewrite lesson manuscript content. Supported: en, es, pt-BR, zh-Hans, hi, ar, ja, ko, fr, de, uk, tr, vi, id, th, it, pl. Arabic (ar) switches the page to RTL. Russian is not available.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "locale": {
+          "type": "string",
+          "description": "Locale code: en, es, pt-BR, zh-Hans, hi, ar, ja, ko, fr, de, uk, tr, vi, id, th, it, pl"
+        }
+      },
+      "required": [
+        "locale"
+      ],
+      "additionalProperties": false
+    }
+  },
+  {
+    "name": "lectern_get_lesson",
+    "description": "Return the full Lectern lesson document: meta, sections (each has kind: built-in material/example/summary or a custom short label), quiz items, gaps, mode, and annotations. Use this before editing or answering student questions. Do not scrape the DOM; tool descriptions are the how-to (rasters/video: lectern_offer_media). Users may paste a LECTERN_QUIZ reference copied from Q1/Q2 — extract quizId and use that item.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {},
+      "additionalProperties": false
+    }
+  },
+  {
+    "name": "lectern_list_gaps",
+    "description": "Analyze whether the lesson is complete enough to teach: title, objectives, materials, and tests. Prefer fixing blockers before publish. Pair-write on the page; do not dump a worksheet in chat.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {},
+      "additionalProperties": false
+    }
+  },
+  {
+    "name": "lectern_list_activity",
+    "description": "List the co-pilot activity history on this tab (newest first): agent tool calls and teacher edits, with ids for lectern_get_activity / lectern_restore_activity. Does not add a card to the log. Use this instead of scraping the co-pilot panel.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "limit": {
+          "type": "number",
+          "description": "Max cards to return (default 40, max 100)"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  {
+    "name": "lectern_get_activity",
+    "description": "Fetch one co-pilot history card by id from lectern_list_activity, including folded AMDP/json-chunk steps when present.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "eventId": {
+          "type": "string",
+          "description": "Activity event id from lectern_list_activity"
+        }
+      },
+      "required": [
+        "eventId"
+      ],
+      "additionalProperties": false
+    }
+  },
+  {
+    "name": "lectern_get_section",
+    "description": "Fetch one lesson section by id (title, body, kind, media) and any nested quiz checks for that section so the agent can answer grounded questions without inventing content. kind may be a built-in role or a custom label the teacher defined. Users may paste a LECTERN_SECTION reference copied from a material — extract sectionId from that block and call this tool.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "sectionId": {
+          "type": "string",
+          "description": "Section id from lectern_get_lesson, or from a pasted LECTERN_SECTION reference"
+        }
+      },
+      "required": [
+        "sectionId"
+      ],
+      "additionalProperties": false
+    }
+  },
+  {
+    "name": "lectern_set_mode",
+    "description": "Switch between teacher (authoring) and student (read-only + annotations) modes. After a PDF restore, switching to teacher does not open the PDF for editing — load a .lectern file to keep writing (unless ALLOW_PDF_RESTORE_AUTHORING is enabled).",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "mode": {
+          "type": "string",
+          "enum": [
+            "teacher",
+            "student"
+          ],
+          "description": "teacher = edit materials/tests; student = read + annotate"
+        }
+      },
+      "required": [
+        "mode"
+      ],
+      "additionalProperties": false
+    }
+  },
+  {
+    "name": "lectern_import_restore",
+    "description": "Load a lesson from a Lectern PDF (upload in UI reads LECTERN_PDF/v1 system pages), LCT1 payload, legacy QR sheet lines, or .lectern JSON. Pass the full LCT1.… payload, LECTERN_PDF/v1 text blocks, raw JSON, or newline-joined legacy QR lines (LCT1|i/n|id|chunk). A .lectern file opens teacher (authoring). PDF / LCT1 restore opens student mode and does not reopen the teacher tab — switching to teacher shows this device’s draft or an empty page, not the PDF lesson. To keep writing, load a .lectern file.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "string",
+          "description": "Restore payload, LECTERN_PDF/v1 blocks, legacy QR lines, or lesson JSON"
+        }
+      },
+      "required": [
+        "data"
+      ],
+      "additionalProperties": false
+    }
+  },
+  {
+    "name": "lectern_add_annotation",
+    "description": "Leave a student mark on a section. Use kind \"learned\" for a one-click learned mark, or kind \"note\" (default) for confusion, questions, or takeaways.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "sectionId": {
+          "type": "string",
+          "description": "Section id to annotate"
+        },
+        "note": {
+          "type": "string",
+          "description": "Note text (optional when kind is learned)"
+        },
+        "kind": {
+          "type": "string",
+          "enum": [
+            "learned",
+            "note"
+          ],
+          "description": "learned = mark section understood; note = free-text margin mark"
+        }
+      },
+      "required": [
+        "sectionId"
+      ],
+      "additionalProperties": false
+    }
+  },
+  {
+    "name": "lectern_list_annotations",
+    "description": "List all student annotations on the current lesson.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {},
+      "additionalProperties": false
+    }
+  }
+]

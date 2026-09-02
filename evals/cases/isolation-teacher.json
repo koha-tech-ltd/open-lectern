@@ -1,0 +1,401 @@
+[
+  {
+    "name": "[teacher][direct] list lesson gaps",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Call lectern_list_gaps and tell me every blocker."
+      }
+    ],
+    "expectedCall": [
+      {
+        "functionName": "lectern_list_gaps"
+      }
+    ]
+  },
+  {
+    "name": "[teacher][direct] get the full lesson",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Get the current lesson document with lectern_get_lesson."
+      }
+    ],
+    "expectedCall": [
+      {
+        "functionName": "lectern_get_lesson"
+      }
+    ]
+  },
+  {
+    "name": "[teacher][direct] set lesson title",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Set the lesson title to Photosynthesis: factories of light."
+      }
+    ],
+    "expectedCall": [
+      {
+        "functionName": "lectern_set_meta",
+        "arguments": {
+          "title": "Photosynthesis: factories of light"
+        }
+      }
+    ]
+  },
+  {
+    "name": "[teacher][direct] switch to student mode",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Switch Lectern to student mode."
+      }
+    ],
+    "expectedCall": [
+      {
+        "functionName": "lectern_set_mode",
+        "arguments": {
+          "mode": "student"
+        }
+      }
+    ]
+  },
+  {
+    "name": "[teacher][direct] add a quiz item",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Add a quiz item: What gas do stomata take in? Choices: oxygen, carbon dioxide, nitrogen, water vapour. The answer is carbon dioxide (index 1). Explain that stomata take in CO2."
+      }
+    ],
+    "expectedCall": [
+      {
+        "functionName": "lectern_upsert_quiz_item",
+        "arguments": {
+          "prompt": { "$contains": "stomata" },
+          "choices": { "$type": "array" },
+          "answerIndex": { "$gte": 0 }
+        }
+      }
+    ]
+  },
+  {
+    "name": "[teacher][direct] add a nested check after a section",
+    "messages": [
+      {
+        "role": "user",
+        "content": "After section sec_leaf01, add a check with lectern_upsert_quiz_item: What gas do stomata take in? Choices: oxygen, carbon dioxide, nitrogen, water vapour. Answer index 1. Set sectionId to sec_leaf01."
+      }
+    ],
+    "expectedCall": [
+      {
+        "functionName": "lectern_upsert_quiz_item",
+        "arguments": {
+          "sectionId": "sec_leaf01",
+          "prompt": { "$contains": "stomata" },
+          "choices": { "$type": "array" },
+          "answerIndex": { "$gte": 0 }
+        }
+      }
+    ]
+  },
+  {
+    "name": "[teacher][direct] publish the lesson",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Publish the lesson and tell me how students get the PDF."
+      }
+    ],
+    "expectedCall": [
+      {
+        "functionName": "lectern_publish_lesson"
+      }
+    ]
+  },
+  {
+    "name": "[teacher][direct] set UI language to Arabic",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Change the Lectern interface language to Arabic."
+      }
+    ],
+    "expectedCall": [
+      {
+        "functionName": "lectern_set_locale",
+        "arguments": {
+          "locale": "ar"
+        }
+      }
+    ]
+  },
+    {
+      "name": "[teacher][direct] pasted nested LECTERN_QUIZ reference",
+      "messages": [
+        {
+          "role": "user",
+          "content": "LECTERN_QUIZ\nquizId: quiz_q1\nlabel: Q1\nprompt: Which picture shows WebMCP?\nsectionId: sec_leaf01\nmode: teacher\nlesson: WebMCP explained\n\nCall lectern_get_section with this sectionId (nested check). Update with lectern_upsert_quiz_item id=this quizId."
+        }
+      ],
+      "expectedCall": [
+        {
+          "functionName": "lectern_get_section",
+          "arguments": {
+            "sectionId": "sec_leaf01"
+          }
+        }
+      ]
+    },
+    {
+      "name": "[teacher][direct] pasted LECTERN_QUIZ reference",
+      "messages": [
+        {
+          "role": "user",
+          "content": "LECTERN_QUIZ\nquizId: quiz_q1\nlabel: Q1\nprompt: Which picture shows WebMCP?\nmode: teacher\nlesson: WebMCP explained\n\nCall lectern_get_lesson. Find this quizId. Update with lectern_upsert_quiz_item id=this quizId."
+        }
+      ],
+      "expectedCall": [
+        {
+          "functionName": "lectern_get_lesson"
+        }
+      ]
+    },
+    {
+      "name": "[teacher][direct] pasted LECTERN_SECTION reference",
+      "messages": [
+        {
+          "role": "user",
+          "content": "LECTERN_SECTION\nsectionId: sec_leaf01\ntitle: Light reactions\nkind: material\nmode: teacher\nlesson: Photosynthesis\n\nCall lectern_get_section with this sectionId. Expand it on the page."
+        }
+      ],
+      "expectedCall": [
+        {
+          "functionName": "lectern_get_section",
+          "arguments": {
+            "sectionId": "sec_leaf01"
+          }
+        }
+      ]
+    },
+    {
+      "name": "[teacher][direct] fetch one section",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Use lectern_get_section with sectionId sec_leaf01 and explain that section only."
+      }
+    ],
+    "expectedCall": [
+      {
+        "functionName": "lectern_get_section",
+        "arguments": {
+          "sectionId": "sec_leaf01"
+        }
+      }
+    ]
+  },
+  {
+    "name": "[teacher][direct] attach illustration with chunked upload",
+    "messages": [
+      {
+        "role": "user",
+        "content": "The generated JPEG data URL is too large for one tool call. Use lectern_begin_media_upload with mimeType image/jpeg, then lectern_append_media_chunk, then lectern_commit_media_upload purpose illustration on section sec_leaf01 so the PDF can both draw the figure and restore it from LCT1."
+      }
+    ],
+    "expectedCall": [
+      {
+        "ordered": [
+          {
+            "functionName": "lectern_begin_media_upload",
+            "arguments": {
+              "mimeType": "image/jpeg"
+            }
+          },
+          {
+            "functionName": "lectern_append_media_chunk",
+            "arguments": {
+              "uploadId": { "$type": "string" },
+              "chunk": { "$type": "string" }
+            }
+          },
+          {
+            "functionName": "lectern_commit_media_upload",
+            "arguments": {
+              "purpose": "illustration",
+              "sectionId": "sec_leaf01",
+              "alt": { "$type": "string" }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "[teacher][direct] offer then bind media already in CAS",
+    "messages": [
+      {
+        "role": "user",
+        "content": "The JPEG is already in this tab. Call lectern_offer_media with its sha256 and mimeType image/jpeg, then lectern_bind_media purpose illustration on section sec_leaf01."
+      }
+    ],
+    "expectedCall": [
+      {
+        "ordered": [
+          {
+            "functionName": "lectern_offer_media",
+            "arguments": {
+              "sha256": { "$type": "string" },
+              "mimeType": "image/jpeg"
+            }
+          },
+          {
+            "functionName": "lectern_bind_media",
+            "arguments": {
+              "purpose": "illustration",
+              "sectionId": "sec_leaf01",
+              "alt": { "$type": "string" }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "[teacher][direct] attach JPEG with AMDP not chat JSON",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Attach this JPEG to section sec_leaf01 with AMDP. Do not put pixels in chat JSON. Cite sha256 first."
+      }
+    ],
+    "expectedCall": [
+      {
+        "functionName": "lectern_offer_media",
+        "arguments": {
+          "sha256": { "$type": "string" },
+          "mimeType": { "$contains": "jpeg" }
+        }
+      }
+    ]
+  },
+  {
+    "name": "[teacher][direct] continue AMDP ranks after plane-put fails then STOP",
+    "messages": [
+      {
+        "role": "user",
+        "content": "lectern_offer_media returned intake. Plane-put failed: DOM.setFileInputFiles was denied and the staging input files stayed empty. Try every remaining AMDP intake rank in order until lectern_media_status present is true, then lectern_compress_media, lectern_bind_media, and STOP. Do not skip a later rank because an earlier one failed."
+      }
+    ],
+    "expectedCall": [
+      {
+        "functionName": "lectern_put_media_slice"
+      }
+    ]
+  },
+  {
+    "name": "[teacher][direct] list co-pilot activity",
+    "messages": [
+      {
+        "role": "user",
+        "content": "What did the agent already do on this tab? Call lectern_list_activity. Do not scrape the co-pilot panel."
+      }
+    ],
+    "expectedCall": [
+      {
+        "functionName": "lectern_list_activity"
+      }
+    ]
+  },
+  {
+    "name": "[teacher][direct] restore from a history card",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Restore the teacher manuscript from co-pilot activity card evt_abc123 using lectern_restore_activity."
+      }
+    ],
+    "expectedCall": [
+      {
+        "functionName": "lectern_restore_activity",
+        "arguments": {
+          "eventId": "evt_abc123"
+        }
+      }
+    ]
+  },
+  {
+    "name": "[teacher][direct] return to activity head",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Leave the checked-out history card and return to the current lesson with lectern_activity_head."
+      }
+    ],
+    "expectedCall": [
+      {
+        "functionName": "lectern_activity_head"
+      }
+    ]
+  },
+  {
+    "name": "[teacher][direct] list Your materials",
+    "messages": [
+      {
+        "role": "user",
+        "content": "List my saved lessons under Your materials with lectern_list_library. Do not scrape the Save & load panel."
+      }
+    ],
+    "expectedCall": [
+      {
+        "functionName": "lectern_list_library"
+      }
+    ]
+  },
+  {
+    "name": "[teacher][direct] switch to a saved draft",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Switch the working materials to the lesson with id les_abc123 from Your materials using lectern_switch_lesson."
+      }
+    ],
+    "expectedCall": [
+      {
+        "functionName": "lectern_switch_lesson",
+        "arguments": {
+          "id": "les_abc123"
+        }
+      }
+    ]
+  },
+  {
+    "name": "[teacher][direct] start a blank lesson",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Start a new blank lesson with lectern_new_lesson. Keep the current one listed under Your materials."
+      }
+    ],
+    "expectedCall": [
+      {
+        "functionName": "lectern_new_lesson"
+      }
+    ]
+  },
+  {
+    "name": "[teacher][direct] save a .lectern file",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Save this lesson as a .lectern file with lectern_save_lesson so I can keep writing later."
+      }
+    ],
+    "expectedCall": [
+      {
+        "functionName": "lectern_save_lesson"
+      }
+    ]
+  }
+]

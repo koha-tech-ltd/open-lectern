@@ -1,0 +1,148 @@
+[
+    {
+      "name": "[student][direct] pasted nested LECTERN_QUIZ reference",
+      "messages": [
+        {
+          "role": "user",
+          "content": "LECTERN_QUIZ\nquizId: quiz_q1\nlabel: Q1\nprompt: Which picture shows WebMCP?\nsectionId: sec_leaf01\nmode: student\nlesson: WebMCP explained\n\nCall lectern_get_section with this sectionId (nested check). Coach this check. Do not dump the answer."
+        }
+      ],
+      "expectedCall": [
+        {
+          "functionName": "lectern_get_section",
+          "arguments": {
+            "sectionId": "sec_leaf01"
+          }
+        }
+      ]
+    },
+    {
+      "name": "[student][direct] pasted LECTERN_QUIZ reference",
+      "messages": [
+        {
+          "role": "user",
+          "content": "LECTERN_QUIZ\nquizId: quiz_q1\nlabel: Q1\nprompt: Which picture shows WebMCP?\nmode: student\nlesson: WebMCP explained\n\nCall lectern_get_lesson. Find this quizId. Coach this check. Do not dump the answer."
+        }
+      ],
+      "expectedCall": [
+        {
+          "functionName": "lectern_get_lesson"
+        }
+      ]
+    },
+    {
+      "name": "[student][direct] pasted LECTERN_SECTION reference",
+      "messages": [
+        {
+          "role": "user",
+          "content": "LECTERN_SECTION\nsectionId: sec_leaf01\ntitle: Light reactions\nkind: material\nmode: student\nlesson: Photosynthesis\n\nCall lectern_get_section with this sectionId. Explain it more simply."
+        }
+      ],
+      "expectedCall": [
+        {
+          "functionName": "lectern_get_section",
+          "arguments": {
+            "sectionId": "sec_leaf01"
+          }
+        }
+      ]
+    },
+    {
+      "name": "[student][direct] get section for grounded Q&A",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Read section sec_leaf01 with lectern_get_section and explain it more simply."
+      }
+    ],
+    "expectedCall": [
+      {
+        "functionName": "lectern_get_section",
+        "arguments": {
+          "sectionId": "sec_leaf01"
+        }
+      }
+    ]
+  },
+  {
+    "name": "[student][direct] leave a confusion mark",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Add an annotation on section sec_leaf01: I am unsure about light saturation."
+      }
+    ],
+    "expectedCall": [
+      {
+        "functionName": "lectern_add_annotation",
+        "arguments": {
+          "sectionId": "sec_leaf01",
+          "note": { "$contains": "saturation" }
+        }
+      }
+    ]
+  },
+  {
+    "name": "[student][direct] list marks",
+    "messages": [
+      {
+        "role": "user",
+        "content": "List my annotations on this lesson."
+      }
+    ],
+    "expectedCall": [
+      {
+        "functionName": "lectern_list_annotations"
+      }
+    ]
+  },
+  {
+    "name": "[student][open] I'm lost, mark this page",
+    "messages": [
+      {
+        "role": "user",
+        "content": "I still don't get why more light is not always better. Leave a mark on the rate section sec_rate02."
+      }
+    ],
+    "expectedCall": [
+      {
+        "functionName": "lectern_add_annotation",
+        "arguments": {
+          "sectionId": "sec_rate02",
+          "note": { "$type": "string" }
+        }
+      }
+    ]
+  },
+  {
+    "name": "[student][open] explain without inventing",
+    "messages": [
+      {
+        "role": "user",
+        "content": "What's this section actually saying? Use the lesson, don't make up extra biology. The id is sec_leaf01."
+      }
+    ],
+    "expectedCall": [
+      {
+        "functionName": "lectern_get_section",
+        "arguments": {
+          "sectionId": "sec_leaf01"
+        }
+      }
+    ]
+  },
+  {
+    "name": "[student][direct] list co-pilot activity",
+    "messages": [
+      {
+        "role": "user",
+        "content": "What did the agent already do on this tab? Call lectern_list_activity. Do not scrape the co-pilot panel."
+      }
+    ],
+    "expectedCall": [
+      {
+        "functionName": "lectern_list_activity"
+      }
+    ]
+  }
+]

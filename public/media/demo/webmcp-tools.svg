@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#FAF7F1"/>
+  <text x="64" y="64" font-family="Georgia, serif" font-size="34" fill="#24382C" font-weight="600">Lectern tool map</text>
+  <text x="64" y="100" font-family="Segoe UI, sans-serif" font-size="18" fill="#5C3A21">What the agent can call on this page</text>
+  <g font-family="IBM Plex Mono, monospace" font-size="18" fill="#FAF7F1">
+    <rect x="80" y="160" width="520" height="70" rx="10" fill="#24382C"/>
+    <text x="110" y="205">lectern_get_lesson / list_gaps</text>
+    <rect x="80" y="250" width="520" height="70" rx="10" fill="#3A5644"/>
+    <text x="110" y="295">lectern_upsert_section + media</text>
+    <rect x="80" y="340" width="520" height="70" rx="10" fill="#5C3A21"/>
+    <text x="110" y="385">lectern_upsert_quiz_item</text>
+    <rect x="80" y="430" width="520" height="70" rx="10" fill="#B8843A"/>
+    <text x="110" y="475">lectern_publish_lesson</text>
+    <rect x="80" y="520" width="520" height="70" rx="10" fill="#C4A35A"/>
+    <text x="110" y="565" fill="#1A1612">lectern_add_annotation (student)</text>
+  </g>
+  <rect x="660" y="160" width="520" height="430" rx="14" fill="#F4EFE6" stroke="#C4A35A" stroke-width="3"/>
+  <text x="700" y="220" font-family="Georgia, serif" font-size="24" fill="#24382C">Teacher loop</text>
+  <text x="700" y="270" font-family="Segoe UI, sans-serif" font-size="18" fill="#5C3A21">1. Draft thin materials</text>
+  <text x="700" y="310" font-family="Segoe UI, sans-serif" font-size="18" fill="#5C3A21">2. Ask agent to list gaps</text>
+  <text x="700" y="350" font-family="Segoe UI, sans-serif" font-size="18" fill="#5C3A21">3. Watch co-pilot attention</text>
+  <text x="700" y="390" font-family="Segoe UI, sans-serif" font-size="18" fill="#5C3A21">4. Review, then publish</text>
+  <text x="700" y="460" font-family="Georgia, serif" font-size="24" fill="#24382C">Student loop</text>
+  <text x="700" y="510" font-family="Segoe UI, sans-serif" font-size="18" fill="#5C3A21">Read / mark / ask explain</text>
+</svg>

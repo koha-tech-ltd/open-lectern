@@ -1,0 +1,6 @@
+hero-loop.mp4 is the Google Flow sunlit lectern clip.
+Looped with a 1.4s dual-layer crossfade (same as koha-tech KineticHero).
+Replace this file to swap the hero background.
+
+hero-poster.webp is the first frame of that clip (WebP). Regenerate it
+when you replace the mp4 so the landing fallback matches the loop.

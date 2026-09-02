@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#F4EFE6"/>
+  <text x="64" y="72" font-family="Georgia, serif" font-size="34" fill="#24382C" font-weight="600">Tools on this page</text>
+  <text x="64" y="110" font-family="Segoe UI, sans-serif" font-size="18" fill="#5C3A21">Agent calls. Lectern updates.</text>
+  <rect x="80" y="180" width="400" height="440" rx="14" fill="#FAF7F1" stroke="#24382C" stroke-width="3"/>
+  <text x="280" y="300" text-anchor="middle" font-family="Georgia, serif" font-size="26" fill="#24382C">AI agent</text>
+  <text x="280" y="350" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="16" fill="#5C3A21">ChatGPT / Chrome</text>
+  <text x="280" y="390" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="16" fill="#5C3A21">with WebMCP</text>
+  <path d="M500 400 H620" stroke="#C4A35A" stroke-width="6"/>
+  <polygon points="620,390 650,400 620,410" fill="#C4A35A"/>
+  <text x="575" y="380" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="16" fill="#B8843A">tools</text>
+  <rect x="670" y="180" width="530" height="440" rx="14" fill="#24382C"/>
+  <text x="935" y="280" text-anchor="middle" font-family="Georgia, serif" font-size="26" fill="#FAF7F1">Lectern page</text>
+  <text x="935" y="340" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="18" fill="#C4A35A">document.modelContext</text>
+  <text x="935" y="400" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="18" fill="#FAF7F1">upsert_section</text>
+  <text x="935" y="440" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="18" fill="#FAF7F1">upsert_quiz_item</text>
+  <text x="935" y="500" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="18" fill="#C4A35A">live manuscript</text>
+</svg>

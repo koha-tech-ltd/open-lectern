@@ -1,0 +1,7 @@
+# Lectern — lectern.click
+# Public product pages are indexable. Lessons stay in the browser, not on this host.
+
+User-agent: *
+Allow: /
+
+Sitemap: https://lectern.click/sitemap.xml

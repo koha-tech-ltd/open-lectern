@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#F4EFE6"/>
+  <text x="64" y="72" font-family="Georgia, serif" font-size="34" fill="#24382C" font-weight="600">Replace the teacher</text>
+  <text x="64" y="110" font-family="Segoe UI, sans-serif" font-size="18" fill="#5C3A21">Not the product. Human stays in the loop.</text>
+  <rect x="80" y="180" width="520" height="440" rx="14" fill="#FAF7F1" stroke="#5C3A21" stroke-width="2"/>
+  <text x="340" y="300" text-anchor="middle" font-family="Georgia, serif" font-size="28" fill="#24382C">Teacher</text>
+  <text x="340" y="350" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="18" fill="#5C3A21">reviews, then publishes</text>
+  <line x1="180" y1="220" x2="500" y2="580" stroke="#8B3A3A" stroke-width="10"/>
+  <line x1="500" y1="220" x2="180" y2="580" stroke="#8B3A3A" stroke-width="10"/>
+  <rect x="680" y="180" width="520" height="440" rx="14" fill="#24382C"/>
+  <text x="940" y="360" text-anchor="middle" font-family="Georgia, serif" font-size="28" fill="#FAF7F1">Agent as author</text>
+  <text x="940" y="420" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="18" fill="#C4A35A">no review step</text>
+  <text x="940" y="540" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="16" fill="#C4A35A">not WebMCP</text>
+</svg>

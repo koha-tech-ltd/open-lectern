@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#F4EFE6"/>
+  <text x="64" y="64" font-family="Georgia, serif" font-size="34" fill="#24382C" font-weight="600">WebMCP bridge</text>
+  <text x="64" y="100" font-family="Segoe UI, sans-serif" font-size="18" fill="#5C3A21">AI agent talks to tools on this page</text>
+  <rect x="80" y="200" width="320" height="320" rx="16" fill="#FAF7F1" stroke="#24382C" stroke-width="3"/>
+  <text x="240" y="280" text-anchor="middle" font-family="Georgia, serif" font-size="26" fill="#24382C">AI agent</text>
+  <text x="240" y="320" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="16" fill="#5C3A21">ChatGPT / browser</text>
+  <text x="240" y="360" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="16" fill="#5C3A21">with WebMCP</text>
+  <path d="M420 360 H540" stroke="#C4A35A" stroke-width="6"/>
+  <polygon points="540,350 570,360 540,370" fill="#C4A35A"/>
+  <text x="495" y="340" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="14" fill="#B8843A">tools</text>
+  <rect x="590" y="200" width="560" height="320" rx="16" fill="#24382C"/>
+  <text x="870" y="280" text-anchor="middle" font-family="Georgia, serif" font-size="26" fill="#FAF7F1">Lectern page</text>
+  <text x="870" y="330" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="16" fill="#C4A35A">document.modelContext</text>
+  <text x="870" y="370" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="16" fill="#FAF7F1">registers live lesson tools</text>
+  <text x="870" y="430" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="16" fill="#E8DFD0">materials / quiz / publish / marks</text>
+  <text x="64" y="600" font-family="Segoe UI, sans-serif" font-size="18" fill="#5C3A21">Not a chatbot about the page -- an agent that can change the page (with your review).</text>
+</svg>

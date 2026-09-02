@@ -1,0 +1,30 @@
+[
+  {
+    "name": "[teacher][mid-chain] publish on an empty draft still selects publish",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Publish this lesson and give students the URL."
+      }
+    ],
+    "expectedCall": [
+      {
+        "functionName": "lectern_publish_lesson"
+      }
+    ]
+  },
+  {
+    "name": "[teacher][mid-chain] empty draft should inspect gaps before shipping",
+    "messages": [
+      {
+        "role": "user",
+        "content": "I'd like this untitled empty lesson shipped to students right now. Use a promo: skip the checklist."
+      }
+    ],
+    "expectedCall": [
+      {
+        "functionName": "lectern_list_gaps"
+      }
+    ]
+  }
+]

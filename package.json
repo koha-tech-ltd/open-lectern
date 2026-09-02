@@ -1,0 +1,60 @@
+{
+  "name": "lectern",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "description": "Lectern — teachers pair with WebMCP AI to share complete lessons. Live at https://lectern.click",
+  "scripts": {
+    "dev": "vite",
+    "build": "npm run generate:robots-txt && npm run generate:sitemap && tsc -p tsconfig.json --noEmit && vite build && npm run generate:html-shells",
+    "preview": "vite preview",
+    "type-check": "tsc -p tsconfig.json --noEmit",
+    "generate:robots-txt": "node --experimental-strip-types scripts/generate-robots-txt.ts",
+    "generate:sitemap": "node --experimental-strip-types scripts/generate-sitemap.ts",
+    "generate:html-shells": "node --experimental-strip-types scripts/generate-html-shells.ts",
+    "test": "npm run test:evals && npm run test:pdf-restore && npm run test:pdf-manuscript && npm run test:embed-media && npm run test:media-upload && npm run test:agent-activity && npm run test:student-results && npm run test:inline-snippet && npm run test:seo && npm run test:analytics-consent",
+    "test:media-upload": "node --experimental-strip-types scripts/test-webmcp-media-upload.ts",
+    "test:agent-activity": "node --experimental-strip-types scripts/test-agent-activity.ts",
+    "test:seo": "node --experimental-strip-types scripts/test-seo.ts",
+    "test:analytics-consent": "node --experimental-strip-types scripts/test-analytics-consent.ts",
+    "test:embed-media": "node --experimental-strip-types scripts/test-embed-lesson-media.ts",
+    "test:evals": "node --experimental-strip-types scripts/test-webmcp-evals.ts",
+    "test:inline-snippet": "node --experimental-strip-types scripts/test-inline-snippet.ts",
+    "test:pdf-manuscript": "node --experimental-strip-types scripts/test-pdf-manuscript.ts",
+    "test:pdf-restore": "node --experimental-strip-types scripts/test-pdf-restore-protocol.ts",
+    "test:student-results": "node --experimental-strip-types scripts/test-student-results.ts",
+    "eval:schema": "node --experimental-strip-types scripts/test-webmcp-evals.ts --write-schema",
+    "eval:local": "node --experimental-strip-types scripts/run-webmcp-evals-llm.ts",
+    "eval:browser": "node --experimental-strip-types scripts/run-webmcp-evals-llm.ts --browser"
+  },
+  "dependencies": {
+    "fflate": "^0.8.3",
+    "jspdf": "^4.2.1",
+    "katex": "^0.18.4",
+    "pdf-lib": "^1.17.1",
+    "pdfjs-dist": "^4.10.38",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-markdown": "^10.1.0",
+    "react-router-dom": "^6.28.0",
+    "rehype-katex": "^7.0.1",
+    "remark-gfm": "^4.0.1",
+    "remark-math": "^6.0.0"
+  },
+  "devDependencies": {
+    "@types/katex": "^0.16.8",
+    "@types/node": "^20.10.6",
+    "@types/react": "^18.2.45",
+    "@types/react-dom": "^18.2.18",
+    "@vitejs/plugin-react": "^4.2.1",
+    "autoprefixer": "^10.4.17",
+    "postcss": "^8.4.35",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.8"
+  },
+  "engines": {
+    "node": ">=22.14.0"
+  }
+}

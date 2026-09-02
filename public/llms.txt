@@ -1,0 +1,16 @@
+# Lectern
+
+Lectern is a native, in-page WebMCP lesson studio at https://lectern.click/.
+
+## Instructions for agents
+
+- Open Lectern in a WebMCP-capable in-app browser.
+- Discover the `lectern_*` tools registered on `document.modelContext`.
+- Use those typed tools to read or change the lesson. Do not substitute DOM automation when the native WebMCP tools are available.
+- Teacher mode registers authoring, validation, media, quiz, and publishing tools.
+- Student mode registers read-only lesson, annotation, and tutoring tools.
+- If `lectern_*` tools are not visible to the agent, reopen the page through a WebMCP-capable browser or enable Chrome WebMCP testing before acting.
+
+Human-facing documentation: https://lectern.click/
+Sitemap: https://lectern.click/sitemap.xml
+WebMCP architecture: https://github.com/koha-tech-ltd/open-lectern/blob/main/docs/architecture/webmcp.md

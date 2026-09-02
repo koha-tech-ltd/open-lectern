@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#F4EFE6"/>
+  <text x="64" y="72" font-family="Georgia, serif" font-size="34" fill="#24382C" font-weight="600">Delete the quiz</text>
+  <text x="64" y="110" font-family="Segoe UI, sans-serif" font-size="18" fill="#5C3A21">Student mode does not remove tests.</text>
+  <rect x="160" y="180" width="960" height="440" rx="14" fill="#FAF7F1" stroke="#5C3A21" stroke-width="2"/>
+  <text x="200" y="250" font-family="Georgia, serif" font-size="24" fill="#24382C">Check for understanding</text>
+  <rect x="200" y="290" width="700" height="80" rx="8" fill="#E8DFD0"/>
+  <text x="230" y="340" font-family="Segoe UI, sans-serif" font-size="20" fill="#5C3A21">Q1  WebMCP lets an agent...</text>
+  <rect x="200" y="390" width="700" height="80" rx="8" fill="#E8DFD0"/>
+  <text x="230" y="440" font-family="Segoe UI, sans-serif" font-size="20" fill="#5C3A21">Q2  First call when gaps...</text>
+  <rect x="930" y="290" width="140" height="180" rx="8" fill="#8B3A3A"/>
+  <text x="1000" y="390" text-anchor="middle" font-family="Georgia, serif" font-size="64" fill="#FAF7F1">X</text>
+  <text x="640" y="560" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="18" fill="#B8843A">remove_quiz_item — teacher only</text>
+</svg>

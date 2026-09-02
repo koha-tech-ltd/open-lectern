@@ -1,0 +1,21 @@
+# Local prod-parity smoke for Lectern.
+# Usage (from repo root):
+#   docker compose up --build
+#   curl http://localhost:8080/health
+#   curl -sI http://localhost:8080/license
+
+services:
+  lectern:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        VITE_SITE_URL: http://localhost:8080
+    ports:
+      - "8080:8080"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
