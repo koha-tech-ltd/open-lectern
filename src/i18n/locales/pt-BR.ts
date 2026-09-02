@@ -89,8 +89,6 @@ const ptBR: Partial<Messages> = {
   'landing.tool.note': 'Uma marca nesta cópia.',
   'landing.finalTitle': 'Abra o estúdio.',
   'landing.finalLede': 'Carregue uma demo. Chame lectern_list_gaps. Exporte um PDF para os alunos.',
-  'landing.aiNotice':
-    'O movimento do hero é pensado para um loop gerado. Até o arquivo estar no lugar, um still do set Lectern é exibido. Visuais podem ser feitos com IA — EU AI Act art. 50.',
 
 
   'webmcp.checking': 'Verificando WebMCP…',
@@ -409,3 +407,4 @@ const ptBR: Partial<Messages> = {
 };
 
 export default ptBR;
+

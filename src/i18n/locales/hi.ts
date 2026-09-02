@@ -87,8 +87,6 @@ const hi: Partial<Messages> = {
   'landing.tool.note': 'इस कॉपी पर एक चिह्न।',
   'landing.finalTitle': 'स्टूडियो खोलें।',
   'landing.finalLede': 'Load a demo. Call lectern_list_gaps. Export a PDF for students.',
-  'landing.aiNotice':
-    'हीरो गति जनरेटेड लूप के लिए बनाई गई है। फ़ाइल आने तक Lectern सेट का एक स्थिर फ़्रेम चलता है। दृश्य AI-निर्मित हो सकते हैं — EU AI Act कला. 50.',
 
 
   'webmcp.checking': 'WebMCP जाँच हो रही है…',
@@ -407,3 +405,4 @@ const hi: Partial<Messages> = {
 };
 
 export default hi;
+

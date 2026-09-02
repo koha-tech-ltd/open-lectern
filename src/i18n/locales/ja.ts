@@ -83,7 +83,6 @@ const ja: Partial<Messages> = {
   'landing.tool.note': 'このコピー上の印。',
   'landing.finalTitle': 'スタジオを開く。',
   'landing.finalLede': 'Load a demo. Call lectern_list_gaps. Export a PDF for students.',
-  'landing.aiNotice': 'ヒーローの動きは生成ループ向けです。ファイルが置かれるまでは Lectern セットの静止画を再生します。映像は AI 制作の場合があります — EU AI Act 第50条。',
 
 
   'webmcp.checking': 'WebMCP を確認しています…',
@@ -402,3 +401,4 @@ const ja: Partial<Messages> = {
 };
 
 export default ja;
+

@@ -89,8 +89,6 @@ const vi: Partial<Messages> = {
   'landing.tool.note': 'Một dấu trên bản sao này.',
   'landing.finalTitle': 'Mở studio.',
   'landing.finalLede': 'Load a demo. Call lectern_list_gaps. Export a PDF for students.',
-  'landing.aiNotice':
-    'Chuyển động hero được thiết kế cho vòng lặp sinh ra. Khi chưa có tệp, một khung tĩnh từ bộ Lectern được phát. Hình ảnh có thể do AI tạo — EU AI Act điều 50.',
 
 
   'webmcp.checking': 'Đang kiểm tra WebMCP…',
@@ -409,3 +407,4 @@ const vi: Partial<Messages> = {
 };
 
 export default vi;
+

@@ -81,7 +81,6 @@ const zhHans: Partial<Messages> = {
   'landing.tool.note': '这份副本上的一处标记。',
   'landing.finalTitle': '打开工作室。',
   'landing.finalLede': 'Load a demo. Call lectern_list_gaps. Export a PDF for students.',
-  'landing.aiNotice': '主视觉动效按生成循环设计。文件到位前，播放 Lectern 套图中的静帧。视觉可能由 AI 制作 — 欧盟 AI 法案第 50 条。',
 
 
   'webmcp.checking': '正在检查 WebMCP…',
@@ -400,3 +399,4 @@ const zhHans: Partial<Messages> = {
 };
 
 export default zhHans;
+

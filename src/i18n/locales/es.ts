@@ -89,8 +89,6 @@ const es: Partial<Messages> = {
   'landing.tool.note': 'Una marca en esta copia.',
   'landing.finalTitle': 'Abra el estudio.',
   'landing.finalLede': 'Carga una demo. Llama lectern_list_gaps. Exporta un PDF para los alumnos.',
-  'landing.aiNotice':
-    'El movimiento del hero está pensado para un bucle generado. Hasta que el archivo esté, se ve un still del set Lectern. Las visuales pueden ser hechas con IA — EU AI Act art. 50.',
 
 
   'webmcp.checking': 'Comprobando WebMCP…',
@@ -409,3 +407,4 @@ const es: Partial<Messages> = {
 };
 
 export default es;
+

@@ -89,8 +89,6 @@ const de: Partial<Messages> = {
   'landing.tool.note': 'Eine Marke auf dieser Kopie.',
   'landing.finalTitle': 'Öffnen Sie das Studio.',
   'landing.finalLede': 'Demo laden. lectern_list_gaps aufrufen. PDF für Schüler exportieren.',
-  'landing.aiNotice':
-    'Die Hero-Bewegung ist für eine generierte Schleife gedacht. Solange die Datei fehlt, läuft ein Still aus dem Lectern-Set. Visuals können KI-gemacht sein — EU-KI-Verordnung Art. 50.',
 
 
   'webmcp.checking': 'WebMCP wird geprüft…',
@@ -409,3 +407,4 @@ const de: Partial<Messages> = {
 };
 
 export default de;
+

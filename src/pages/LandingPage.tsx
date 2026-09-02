@@ -221,7 +221,7 @@ function LandingNav() {
           <a href="#how">{t('landing.nav.how')}</a>
           <a href="#open">{t('landing.nav.open')}</a>
         </nav>
-        <div className="flex items-center gap-3">
+        <div className="landing-nav-end">
           <LanguageSelector />
           <Link className="landing-nav-cta" to={STUDIO_FROM_HOME}>
             {t('landing.nav.studio')}
@@ -459,7 +459,6 @@ export function LandingPage() {
             {t('landing.ctaStar')}
           </a>
         </div>
-        <p className="landing-ai">{t('landing.aiNotice')}</p>
       </section>
 
       <SiteFooter />

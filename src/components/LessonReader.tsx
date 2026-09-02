@@ -106,8 +106,8 @@ export function LessonReader({
   }
 
   return (
-    <div className={noProject ? 'studio-idle' : 'grid gap-8 lg:grid-cols-[1.4fr_0.8fr]'}>
-      <section>
+    <div className={noProject ? 'studio-idle' : 'studio-lesson grid gap-8 lg:grid-cols-[1.4fr_0.8fr]'}>
+      <section className="min-w-0">
         {noProject ? (
           <ImportRestorePanel
             mode="student"
@@ -188,7 +188,7 @@ export function LessonReader({
         )}
       </section>
 
-      <aside className={noProject ? 'studio-idle-copilot' : 'studio-rail'}>
+      <aside className={noProject ? 'studio-idle-copilot min-w-0' : 'studio-rail min-w-0'}>
         {noProject ? (
           copilotSlot
         ) : (

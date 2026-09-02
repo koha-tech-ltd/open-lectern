@@ -83,8 +83,6 @@ const ko: Partial<Messages> = {
   'landing.tool.note': '이 사본의 표시.',
   'landing.finalTitle': '스튜디오를 여세요.',
   'landing.finalLede': 'Load a demo. Call lectern_list_gaps. Export a PDF for students.',
-  'landing.aiNotice':
-    '히어로 모션은 생성된 루프용입니다. 파일이 놓이기 전에는 Lectern 세트의 정지가 재생됩니다. 시각물은 AI 제작일 수 있습니다 — EU AI Act 제50조.',
 
 
   'webmcp.checking': 'WebMCP를 확인하는 중…',
@@ -403,3 +401,4 @@ const ko: Partial<Messages> = {
 };
 
 export default ko;
+

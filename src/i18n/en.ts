@@ -100,8 +100,6 @@ export const en = {
   'landing.tool.note': 'A mark on this copy.',
   'landing.finalTitle': 'Open the studio.',
   'landing.finalLede': 'Load a demo. Call lectern_list_gaps. Export a PDF for students.',
-  'landing.aiNotice':
-    'Hero motion is designed for a generated loop. Until the file is in place, a still from the Lectern set plays. Visuals may be AI-made — EU AI Act Art. 50.',
 
   'webmcp.checking': 'Checking WebMCP…',
   'webmcp.missing':
@@ -613,3 +611,4 @@ export const en = {
   'gap.blocker': 'blocker',
   'gap.warning': 'warning',
 } as const;
+

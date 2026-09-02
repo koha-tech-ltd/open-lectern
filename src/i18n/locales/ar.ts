@@ -87,8 +87,6 @@ const ar: Partial<Messages> = {
   'landing.tool.note': 'علامة على هذه النسخة.',
   'landing.finalTitle': 'افتح الاستوديو.',
   'landing.finalLede': 'حمّل عرضاً. استدعِ lectern_list_gaps. صدّر PDF للطلاب.',
-  'landing.aiNotice':
-    'حركة البطل مصمَّمة لحلقة مولَّدة. إلى أن يوضع الملف، تُعرض لقطة من مجموعة Lectern. قد تكون المرئيات من صنع الذكاء الاصطناعي — قانون الذكاء الاصطناعي للاتحاد الأوروبي المادة 50.',
 
 
   'webmcp.checking': 'جارٍ التحقق من WebMCP…',
@@ -407,3 +405,4 @@ const ar: Partial<Messages> = {
 };
 
 export default ar;
+

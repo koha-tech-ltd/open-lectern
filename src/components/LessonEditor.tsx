@@ -530,8 +530,8 @@ export function LessonEditor({
   );
 
   return (
-    <div className={showStartBanner ? 'studio-idle' : 'grid gap-8 lg:grid-cols-[1.4fr_0.8fr]'}>
-      <section className="space-y-5">
+    <div className={showStartBanner ? 'studio-idle' : 'studio-lesson grid gap-8 lg:grid-cols-[1.4fr_0.8fr]'}>
+      <section className="min-w-0 space-y-5">
         {showStartBanner ? (
           <LessonStartBanner
             mediaId="draft"
@@ -930,7 +930,7 @@ export function LessonEditor({
         )}
       </section>
 
-      <aside className={showStartBanner ? 'studio-idle-copilot' : 'studio-rail'}>
+      <aside className={showStartBanner ? 'studio-idle-copilot min-w-0' : 'studio-rail min-w-0'}>
         {showStartBanner ? (
           copilotSlot
         ) : (

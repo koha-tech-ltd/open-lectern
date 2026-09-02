@@ -88,8 +88,6 @@ const tr: Partial<Messages> = {
   'landing.tool.note': 'Bu kopyada bir işaret.',
   'landing.finalTitle': 'Stüdyoyu açın.',
   'landing.finalLede': 'Load a demo. Call lectern_list_gaps. Export a PDF for students.',
-  'landing.aiNotice':
-    'Kahraman hareketi üretilmiş bir döngü için tasarlandı. Dosya yerinde olana dek Lectern setinden bir durağan kare oynar. Görseller yapay zekâ ile yapılmış olabilir — AB YZ Yasası md. 50.',
 
 
   'webmcp.checking': 'WebMCP denetleniyor…',
@@ -408,3 +406,4 @@ const tr: Partial<Messages> = {
 };
 
 export default tr;
+

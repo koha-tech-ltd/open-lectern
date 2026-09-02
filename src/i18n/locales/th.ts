@@ -88,8 +88,6 @@ const th: Partial<Messages> = {
   'landing.tool.note': 'เครื่องหมายบนสำเนานี้',
   'landing.finalTitle': 'เปิดสตูดิโอ',
   'landing.finalLede': 'Load a demo. Call lectern_list_gaps. Export a PDF for students.',
-  'landing.aiNotice':
-    'การเคลื่อนไหวฮีโร่ออกแบบสำหรับลูปที่สร้างขึ้น จนกว่าไฟล์จะอยู่ จะเล่นภาพนิ่งจากชุด Lectern ภาพอาจสร้างด้วย AI — EU AI Act ข้อ 50',
 
 
   'webmcp.checking': 'กำลังตรวจสอบ WebMCP…',
@@ -408,3 +406,4 @@ const th: Partial<Messages> = {
 };
 
 export default th;
+

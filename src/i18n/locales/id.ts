@@ -88,8 +88,6 @@ const id: Partial<Messages> = {
   'landing.tool.note': 'Sebuah tanda pada salinan ini.',
   'landing.finalTitle': 'Buka studionya.',
   'landing.finalLede': 'Load a demo. Call lectern_list_gaps. Export a PDF for students.',
-  'landing.aiNotice':
-    'Gerak hero dirancang untuk loop yang dihasilkan. Sampai berkas ada, sebuah still dari set Lectern diputar. Visual mungkin dibuat AI — EU AI Act pasal 50.',
 
 
   'webmcp.checking': 'Memeriksa WebMCP…',
@@ -408,3 +406,4 @@ const id: Partial<Messages> = {
 };
 
 export default id;
+

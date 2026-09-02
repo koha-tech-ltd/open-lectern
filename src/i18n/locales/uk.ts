@@ -128,8 +128,6 @@ const uk: Partial<Messages> = {
   'landing.tool.note': 'Позначка на цій копії.',
   'landing.finalTitle': 'Відкрийте студію.',
   'landing.finalLede': 'Завантажте демо. Викличте lectern_list_gaps. Експортуйте PDF для учнів.',
-  'landing.aiNotice':
-    'Рух героя розрахований на згенерований цикл. Доки файлу немає, грає кадр із набору Lectern. Візуали можуть бути зроблені ШІ — EU AI Act ст. 50.',
 
 
   'webmcp.checking': 'Перевірка WebMCP…',
@@ -465,3 +463,4 @@ const uk: Partial<Messages> = {
 };
 
 export default uk;
+

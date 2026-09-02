@@ -87,7 +87,7 @@ export function SectionMediaAttach({
         </select>
       )}
       <input
-        className="min-w-[12rem] flex-1 rounded-md border border-walnut/15 bg-cream px-2 py-1 text-xs outline-none focus:border-brass"
+        className="min-w-0 flex-1 rounded-md border border-walnut/15 bg-cream px-2 py-1 text-xs outline-none focus:border-brass"
         placeholder={t('attach.urlPlaceholder')}
         value={url}
         onChange={(e) => setUrl(e.target.value)}

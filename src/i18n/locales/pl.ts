@@ -88,8 +88,6 @@ const pl: Partial<Messages> = {
   'landing.tool.note': 'Oznaczenie na tej kopii.',
   'landing.finalTitle': 'Otwórz studio.',
   'landing.finalLede': 'Wczytaj demo. Wywołaj lectern_list_gaps. Wyeksportuj PDF dla uczniów.',
-  'landing.aiNotice':
-    'Ruch w tle hero jest zaprojektowany pod zapętlony film. Dopóki pliku nie ma, gra kadr z zestawu Lectern. Wizualizacje mogą być tworzone przez SI — EU AI Act art. 50.',
 
   'webmcp.checking': 'Sprawdzanie WebMCP…',
   'webmcp.missing':
@@ -407,3 +405,4 @@ const pl: Partial<Messages> = {
 };
 
 export default pl;
+
